@@ -1,9 +1,7 @@
-import React from 'react';
-
-import { Button } from 'components/atoms/Button';
+import { Button } from 'components/Button';
 
 export default {
-  title: 'Design System/Atoms/Button',
+  title: 'Components/Button',
   component: Button,
 };
 
