@@ -1,5 +1,7 @@
+import { MainPage } from 'pages/MainPage';
+
 function App() {
-  return <div>Hello App</div>;
+  return <MainPage />;
 }
 
 export default App;

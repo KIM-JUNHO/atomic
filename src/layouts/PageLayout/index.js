@@ -1,34 +1,20 @@
+import { Layout } from 'antd';
 import styled from 'styled-components';
 
-const Wrapper = styled.div`
-  display: flex;
-`;
+const Wrapper = styled(Layout)``;
 
-const Sider = styled.div`
-  min-height: 100vh;
-`;
+const ContentWrapper = styled(Layout)``;
 
-const ContentWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-`;
-
-const Header = styled.div``;
-
-const Content = styled.div`
-  height: 100%;
-`;
-const Footer = styled.div``;
+const Content = styled.div``;
 
 export const PageLayout = ({ header, sider, children, footer }) => {
   return (
     <Wrapper>
-      <Sider>{sider}</Sider>
+      {sider}
       <ContentWrapper>
-        <Header>{header}</Header>
+        {header}
         <Content>{children}</Content>
-        <Footer>{footer}</Footer>
+        {footer}
       </ContentWrapper>
     </Wrapper>
   );
